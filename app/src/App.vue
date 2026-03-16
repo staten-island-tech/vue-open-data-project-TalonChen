@@ -1,9 +1,10 @@
 <template>
-  <div></div>
+  <div>
+    <RouterLink to="/">Back</RouterLink>
+    <RouterView />
+  </div>
 </template>
 
-<script setup>
-//https://data.cityofnewyork.us/resource/mq6n-s45c.json
-</script>
+<script setup></script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>
