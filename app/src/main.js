@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import App from './views/EUseCard.vue'
+import App from 'EUseCard.vue'
 import router from './router'
 
 const app = createApp(App)
