@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <EUseCard v-for="item in bills" :key="index" :bill="item" />
+    <EUseCard v-for="item in bills" :bill="item" />
   </div>
 </template>
 
