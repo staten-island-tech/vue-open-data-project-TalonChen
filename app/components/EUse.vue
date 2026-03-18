@@ -6,7 +6,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import EUseCard from 'EUseCard.vue'
+import EUseCard from '@/views/EUseCard.vue'
 
 const bills = ref([])
 async function getData() {

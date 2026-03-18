@@ -1,5 +1,5 @@
 <template>
-  <h2>{{ bill?.borough || 'No' }}</h2>
+  <h2>{{ bill?.building_address || 'No' }}</h2>
 </template>
 
 <script setup>
