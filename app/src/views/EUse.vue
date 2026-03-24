@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <EUseCard v-for="(item, index) in bills" :key="index" :bill="item" :id="offset + index" />
+    <EUseCard v-for="(item, index) in bills" :key="index" :bill="item" :id="index" />
   </div>
 </template>
 
@@ -9,11 +9,10 @@ import { ref, onMounted } from 'vue'
 import EUseCard from '../../components/EUseCard.vue'
 
 const bills = ref([])
-const offset = ref(0)
 async function getData() {
   try {
     const response = await fetch(
-      'https://data.cityofnewyork.us/resource/mq6n-s45c.json?$order=building_address&$limit=1&$offset=${offset}',
+      `https://data.cityofnewyork.us/resource/mq6n-s45c.json?$order=building_address`,
     )
     const data = await response.json()
     bills.value = data
