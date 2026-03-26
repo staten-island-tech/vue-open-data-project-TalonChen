@@ -2,7 +2,6 @@
   <router-link :to="billPath">
     <h1>{{ bill?.building_address }}</h1>
     <h2>{{ bill?.measurement }}</h2>
-    <p>{{ bill?._1 }}</p>
   </router-link>
 </template>
 
